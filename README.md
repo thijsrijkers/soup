@@ -1,5 +1,6 @@
 ## Soup
 Soup is a lightweight 3D engine written in Go using Ebiten. It allows you to create simple first-person 3D environments in a classic “Doom” style.
+<img src="etc/demo.gif" alt="My GIF" width="200"/>
 
 ## Map generation
 In the program, the map is represented as a 2D array of integers. In this array, a 1 & 2 represents a walls, while a 0 represents a walkable area. For example, a simple map could be:
@@ -15,8 +16,6 @@ In the program, the map is represented as a 2D array of integers. In this array,
 	{1, 0, 0, 0, 0, 0, 0, 1},
 	{1, 1, 1, 1, 1, 1, 1, 1},
 ```
-
-<img src="etc/demo.gif" alt="My GIF" width="100"/>
 
 ## Player movement
 - `W` – Move forward  
