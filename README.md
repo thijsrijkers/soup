@@ -1,5 +1,6 @@
 ## Soup
 Soup is a lightweight 3D engine written in Go using Ebiten. It allows you to create simple first-person 3D environments in a classic “Doom” style.
+
 <img src="etc/demo.gif" alt="My GIF" width="200"/>
 
 ## Map generation
