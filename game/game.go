@@ -2,7 +2,7 @@ package game
 
 import (
 	"math"
-
+	"image/color"
 	"github.com/hajimehoshi/ebiten/v2"
 	"soup/drawer"
 	"soup/player"
@@ -12,6 +12,7 @@ type Game struct {
 	Player player.Player
 	Drawer drawer.Drawer
 	WorldMap [][]int
+	MapColors map[int]color.RGBA
 	ScreenWidth int
 	ScreenHeight int
 }
@@ -42,12 +43,12 @@ func (game *Game) Draw(screen *ebiten.Image) {
 	for horizontalPosition := 0; horizontalPosition < numRays; horizontalPosition++ {
 		rayAngle := game.Player.Angle - fov/2 + fov*float64(horizontalPosition)/float64(numRays)
 
-		distance := game.Drawer.CastRay(&game.Player, rayAngle, game.WorldMap)
+		distance, wallColor := game.Drawer.CastRay(&game.Player, rayAngle, game.WorldMap, game.MapColors)
 		distance *= math.Cos(game.Player.Angle - rayAngle)
 
 		wallHeight := int(float64(game.ScreenHeight) / distance)
 
-		drawer.DrawVerticalLine(screen, horizontalPosition, wallHeight, game.ScreenHeight)
+		drawer.DrawVerticalLine(screen, horizontalPosition, wallHeight, game.ScreenHeight, wallColor)
 	}
 }
 

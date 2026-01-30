@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"image/color"
 	"github.com/hajimehoshi/ebiten/v2"
 	"soup/drawer"
 	"soup/game"
@@ -13,7 +14,16 @@ var worldMap = [][]int{
 	{1, 0, 0, 0, 0, 0, 0, 1},
 	{1, 0, 0, 0, 0, 0, 0, 1},
 	{1, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 2, 2, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 1},
 	{1, 1, 1, 1, 1, 1, 1, 1},
+}
+
+var wallColors = map[int]color.RGBA{
+	1: {R: 255, G: 165, B: 0, A: 255}, // Orange
+	2: {R: 0, G: 0, B: 255, A: 255},   // Blue
 }
 
 func main() {
@@ -30,6 +40,7 @@ func main() {
 			MaxDist: 20,
 		},
 		WorldMap: worldMap,
+		MapColors: wallColors,
 		ScreenWidth: 640,
 		ScreenHeight: 480,
 	}
