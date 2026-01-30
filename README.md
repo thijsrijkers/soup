@@ -7,8 +7,7 @@ In the program, the map is represented as a 2D array of integers. In this array,
 <table>
   <tr>
     <td>
-
-```bash
+      <pre><code>
 {1, 1, 1, 1, 1, 1, 1, 1},
 {1, 0, 0, 0, 0, 0, 0, 1},
 {1, 0, 0, 0, 0, 0, 0, 1},
@@ -18,7 +17,7 @@ In the program, the map is represented as a 2D array of integers. In this array,
 {1, 0, 0, 0, 0, 0, 0, 1},
 {1, 0, 0, 0, 0, 0, 0, 1},
 {1, 1, 1, 1, 1, 1, 1, 1},
-```
+      </code></pre>
 </td>
 <td>
   <img src="etc/demo.gif" alt="demo GIF" width="250"/>
