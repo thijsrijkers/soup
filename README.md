@@ -34,7 +34,7 @@ go run ./main.go
 - **Go 1.21+**
 - **Ebiten v2** (`github.com/hajimehoshi/ebiten/v2`)
 - **Operating System:**
-  - Linux / WSL / Windows / macOS
+  - Linux / Windows / macOS
 - **Linux / WSL additional dependencies** (for X11 / OpenGL support):
 
 ```bash
