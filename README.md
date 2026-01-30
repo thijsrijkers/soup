@@ -11,17 +11,24 @@ In the program, the map is represented as a 2D array of integers. In this array,
 	{1, 0, 0, 0, 0, 0, 0, 1},
 	{1, 1, 1, 1, 1, 1, 1, 1},
 ```
-## Usage
-Run the engine:
-```bash
-go run ./main.go
-```
-
-Then control the player using:
+## Player movement
 - `W` – Move forward  
 - `S` – Move backward  
 - `A` – Rotate left  
 - `D` – Rotate right
+
+## Installation
+Clone the repository:
+```bash
+git clone https://github.com/thijsrijkers/soup.git
+cd soup
+go mod tidy
+```
+
+Than launch the program by executing:
+```bash
+go run ./main.go
+```
 
 ## Requirements
 - **Go 1.21+**
@@ -41,12 +48,4 @@ sudo apt install -y \
   libxxf86vm-dev \
   libgl1-mesa-dev \
   libglu1-mesa-dev
-```
-
-## Installation
-Clone the repository:
-```bash
-git clone https://github.com/thijsrijkers/soup.git
-cd soup
-go mod tidy
 ```
