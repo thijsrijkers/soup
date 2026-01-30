@@ -1,5 +1,5 @@
 ## Soup
-Soup is a lightweight 3D engine written in Go using Ebiten. It allows you to create simple first-person 3D environments in a classic “Wolfenstein / Doom” style.
+Soup is a lightweight 3D engine written in Go with Ebiten. It lets you build simple first person 3D worlds, reminiscent of classic 90s shooters like “Wolfenstein” and “Doom.”
 
 ## Map generation
 In the program, the map is represented as a 2D array of integers. In this array, a 1 & 2 represents a walls, while a 0 represents a walkable area. For example, a simple map could be:
