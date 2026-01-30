@@ -4,18 +4,26 @@ Soup is a lightweight 3D engine written in Go using Ebiten. It allows you to cre
 ## Map generation
 In the program, the map is represented as a 2D array of integers. In this array, a 1 & 2 represents a walls, while a 0 represents a walkable area. For example, a simple map could be:
 
+<table>
+  <tr>
+    <td>
+
+```bash
+{1, 1, 1, 1, 1, 1, 1, 1},
+{1, 0, 0, 0, 0, 0, 0, 1},
+{1, 0, 0, 0, 0, 0, 0, 1},
+{1, 0, 0, 0, 0, 0, 0, 1},
+{1, 0, 0, 2, 2, 0, 0, 1},
+{1, 0, 0, 0, 0, 0, 0, 1},
+{1, 0, 0, 0, 0, 0, 0, 1},
+{1, 0, 0, 0, 0, 0, 0, 1},
+{1, 1, 1, 1, 1, 1, 1, 1},
 ```
-	{1, 1, 1, 1, 1, 1, 1, 1},
-	{1, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 2, 2, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 1},
-	{1, 1, 1, 1, 1, 1, 1, 1},
-```
-<img src="etc/demo.gif" alt="demo GIF" width="250"/>
+</td>
+<td>
+  <img src="etc/demo.gif" alt="demo GIF" width="250"/>
+</td>
+
 
 ## Player movement
 - `W` – Move forward  
