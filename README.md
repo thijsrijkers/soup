@@ -16,7 +16,7 @@ In the program, the map is represented as a 2D array of integers. In this array,
 	{1, 1, 1, 1, 1, 1, 1, 1},
 ```
 
-![My GIF](etc/demo.gif)
+<img src="etc/animation.gif" alt="My GIF" width="100"/>
 
 ## Player movement
 - `W` – Move forward  
